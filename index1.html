@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+background-color: grey;
+    }
+    #click{
+        border: none;
+        background-color: black;
+        color: whitesmoke;
+    top: 50vh;
+        padding: 5px 10px;
+        /* display: flex; */
+    }
+</style>
+<body>
+
+    <div class="main">
+
+        <!-- <input type="button" name="click me" id="click" placeholder="Click Me!">  -->
+        <button id="click" onclick="b()"> click me!</button>
+    </div>
+
+    <script>
+        function g(){
+        return d= ()=>{
+            setTimeout(()=>{
+                alert("Thid test was displayed after 4 second")},2000)
+        }
+            
+        }
+                  const a=document.getElementById("click");
+      a.addEventListener("click",g());
+
+    </script>
+</body>
+</html>

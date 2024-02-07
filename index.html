@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div><h2>helloo</h2>
+    <button id="green">Green</button>
+    <button id="red">Red</button></div>
+    </div>
+</body>
+<script>
+//   // closure //
+// function a(){
+//   const f=451540;
+//   function b(){
+//     console.log(f);
+//   }
+//   return b;
+// }
+// const c=a();
+// c();
+
+function setcolor (color){
+  return () =>{
+    document.body.style.backgroundColor =color;
+  }
+}
+const setgreen = setcolor('green');
+const setred = setcolor('red');
+
+document.getElementById("green").onclick = setgreen;
+document.getElementById("red").onclick = setred;
+
+// function setColor(c){
+//   return () => {
+//     document.body.style.backgroundColor = c;
+//   };
+// }
+
+// const greenHandler = setColor("green");
+// const redHandler = setColor("red");
+
+// document.getElementById('green').onclick = greenHandler;
+// document.getElementById('red').onclick = redHandler;
+
+
+ const a = function (){
+  return function x() {
+console.log("aaaa")
+  }
+}
+console.log (a());
+
+const b=function(x){
+console.log(x)
+}
+
+function d(){
+
+}
+b(d);
+
+
+
+
+
+</script>
+</html>
